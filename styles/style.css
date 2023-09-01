@@ -1,0 +1,142 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#F3F5FC;
+    font-family: 'Inter';
+    min-height: 100vh;
+}
+
+a {
+    color: #0A3871;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    font-size: 1.1rem;
+}
+
+.logo {
+    margin: 1rem;
+    width: 1.6rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.secao-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-input {
+    background-color: #F3F5FC;
+    border: 1px hidden #F3F5FC;
+    color: #0A3871;  
+    font-size: 1.2rem;
+    height: 8rem;  
+}
+
+.campo-input::placeholder {
+    color: #0A3871;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    margin-top: 2rem;
+}
+
+.informacao img {
+    margin-right: 0.15rem;
+    width: 15px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.encriptar, .desencriptar, .copy {
+    border: 1px solid #0A3871;
+    border-radius: 18px;
+    font-size: 1.2rem;
+    height: 3.5rem;
+    width: 85%;
+}
+
+.encriptar {
+    background-color: #0A3871;
+    color: #FFFF;
+}
+
+.desencriptar, .copy {
+    background-color: #D8DFE8; 
+    color: #0A3871;   
+}
+
+.encriptar:hover {
+    background-color: #D8DFE8;
+    color:#0A3871;
+    transition: all;
+    transition-delay: 2ms;
+    transition-duration: 500ms;
+}
+
+.desencriptar:hover, .copy:hover {
+    background-color: #0A3871;
+    color: #FFFF;
+    transition: all;
+    transition-delay: 2ms;
+    transition-duration: 500ms;
+}
+
+.secao-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10rem;
+}
+
+.campo-output {
+    /* background-image: url("./images/pessoinha1x.png");
+    background-position: center;
+    background-repeat: no-repeat; */
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    color: #0A3871;
+    font-size: 1.3rem;
+    height: 70%;
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+footer {
+    background-color: #E8BE3A;
+    bottom: 0;
+    color:#0A3871;
+    font-size: 1rem;
+    height: 2rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
