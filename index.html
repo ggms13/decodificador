@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" >
 
-        <title>Super Decodificador</title>
-
+        <title>Decodificador 2000</title>
                                 <!--CSS-->
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
                                 <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-                                <!--Icon-->
-         <script src="https://kit.fontawesome.com/1673379d7e.js" crossorigin="anonymous"></script>
-         <link rel="icon" type="image/x-icon" href="./images/lupa.png">
+         <link rel="icon" type="image/x-icon" href="./assets/images/lupa.png">
     </head>
     <body>
         <header>
-            <img  id="logo" src="./images/logo1x.png" alt="Letra A na cor azul representando a logo da Alura">
+            <img  class="logo" src="./assets/images/logo1x.png" alt="Letra A na cor azul representando a logo da Alura">
         </header>
 
         <main class="main">
-            <section class="secao-input">
+                <section class="secao-input">
                 
-                <input class="campo-input"  id="input" type="text" placeholder="Digite seu texto">
-
-                <div class="informacao">
-                    <img src="./images/icone-atencao1x.png" alt="ponto de exclamação dentro de um círculo">
-                    <p>Apenas letras minúsculas e sem acento.</p>
-                   </div>
-                   <div class="botoes">
-                            <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <input class="campo-input"  id="input" type="text" placeholder="Digite seu texto">
+    
+                    <div class="informacao">
+                        <img src="./assets/images/icone-atencao1x.png" alt="ponto de exclamação dentro de um círculo">
+                        <p>Apenas letras sem acento.</p>
+                       </div>
+                       <div class="botoes">
+                                <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                        
+                                <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>        
+                        </div>
+               </section>
+             
+    
+                <section class="secao-output">
+    
+                    <input class="campo-output" id="output" type="text">
                     
-                            <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>        
-                    </div>
-           </section>
-         
-
-            <section class="secao-output">
-
-                <input class="campo-output" type="text">
-                
-                <button id="clipboardcopy">Copiar</button>
-               
-            </section>
+                    <button class="copy" id="clipboardcopy">Copiar</button>
+                   
+                </section>
         </main>    
-
-                                            <!--Javascript-->
-        <script src="script.js"></script>
-
         <footer>
         
             <p>Desenvolvido por <a href="https://github.com/ggms13">
@@ -59,6 +51,7 @@
             </p>
             
         </footer>
-    </body>
-    
+                                 <!--Javascript-->
+        <script src="script.js"></script>
+    </body>   
 </html>
