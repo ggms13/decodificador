@@ -125,10 +125,8 @@ input:focus {
 
 footer {
     background-color: #E8BE3A;
-    bottom: 0;
     color:#0A3871;
     padding: 0.5rem 0;
-    position: fixed;
     text-align: center;
     width: 100%;
 }
