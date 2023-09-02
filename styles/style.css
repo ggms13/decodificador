@@ -43,7 +43,6 @@ a:hover {
 .campo-input::placeholder {
     color: #0A3871;
     font-size: 1.5rem;
-    text-align: start;
 }
 
 .informacao {
@@ -84,20 +83,10 @@ a:hover {
     color: #0A3871;   
 }
 
-.encriptar:hover {
-    background-color: #D8DFE8;
-    color:#0A3871;
+.encriptar:hover, .desencriptar:hover, .copy:hover {
+    scale: 1.02;
     transition: all;
-    transition-delay: 2ms;
-    transition-duration: 500ms;
-}
-
-.desencriptar:hover, .copy:hover {
-    background-color: #0A3871;
-    color: #FFFF;
-    transition: all;
-    transition-delay: 2ms;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
 }
 
 .secao-output {
@@ -107,9 +96,6 @@ a:hover {
 }
 
 .campo-output {
-    /* background-image: url("./images/pessoinha1x.png");
-    background-position: center;
-    background-repeat: no-repeat; */
     border: 1px solid #0A3871;
     border-radius: 12px;
     color: #0A3871;
@@ -129,4 +115,64 @@ footer {
     padding: 0.5rem 0;
     text-align: center;
     width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 481px) {
+    .logo {
+        margin: 2rem;
+        width: 2rem;
+    }
+
+    .main {
+        flex-direction: row;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .secao-input {
+        width: 45%;
+        height: 32rem;
+    }
+
+    .campo-input { 
+        font-size: 1.5rem;
+        height: 15rem;  
+        width: 22rem;
+    }
+
+    .informacao {
+        font-size: 1.1rem;
+    }
+
+    .informacao img {
+        margin-right: 0.4rem;
+    }
+
+    .botoes {
+        align-items: flex-start;
+        margin-top: 6rem;
+    }
+
+    .encriptar, .desencriptar, .copy {
+        font-size: 1.3rem;
+    }
+
+    .secao-output {
+        margin-left: 5rem;
+    }
+
+    .campo-output {
+        background-image: url("../assets/images/pessoinha1x.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 28rem;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+
+    }
 }
