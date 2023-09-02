@@ -46,5 +46,5 @@ document.getElementById('clipboardcopy').addEventListener('click', clicboarCopy)
 async function clicboarCopy() {
     let text = document.querySelector(".campo-output").value;
     await navigator.clipboard.writeText(text);
-    
+    alert("Texto copiado!");
 }
