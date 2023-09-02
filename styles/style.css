@@ -21,20 +21,15 @@ a:hover {
 }
 
 .logo {
-    margin: 1rem;
+    margin: 1.1rem;
     width: 1.6rem;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 1rem auto;
-}
-
-.secao-input {
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
 }
 
 .campo-input {
@@ -42,7 +37,7 @@ a:hover {
     border: 1px hidden #F3F5FC;
     color: #0A3871;  
     font-size: 1.2rem;
-    height: 8rem;  
+    height: 10rem;  
 }
 
 .campo-input::placeholder {
@@ -54,7 +49,7 @@ a:hover {
 .informacao {
     display: flex;
     align-items: center;
-    font-size: .8rem;
+    font-size: .9rem;
     margin-top: 2rem;
 }
 
@@ -64,11 +59,11 @@ a:hover {
 }
 
 .botoes {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
     margin: 2rem 0;
     gap: 1rem;
+    flex-direction: column;
 }
 
 .encriptar, .desencriptar, .copy {
@@ -109,7 +104,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 10rem;
 }
 
 .campo-output {
@@ -120,7 +114,7 @@ a:hover {
     border-radius: 12px;
     color: #0A3871;
     font-size: 1.3rem;
-    height: 70%;
+    height: 9rem;
     margin-bottom: 1rem;
 }
 
@@ -131,12 +125,8 @@ input:focus {
 
 footer {
     background-color: #E8BE3A;
-    bottom: 0;
     color:#0A3871;
-    font-size: 1rem;
-    height: 2rem;
     padding: 0.5rem 0;
-    position: absolute;
     text-align: center;
     width: 100%;
 }
